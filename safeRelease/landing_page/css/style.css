@@ -1292,6 +1292,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+    direction: ltr;
     color: var(--gray-800);
     text-decoration: none;
 }
@@ -1343,7 +1344,7 @@ body {
 }
 
 .nav-links {
-    gap: clamp(0.8rem, 2vw, 1.75rem);
+    gap: clamp(1.55rem, 4vw, 3.55rem);
     flex-wrap: wrap;
     justify-content: center;
 }
