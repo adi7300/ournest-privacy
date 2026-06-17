@@ -70,6 +70,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 150px;
     font-size: 16px;
 }
 
@@ -1365,11 +1366,12 @@ body {
 .hero-section {
     min-height: calc(100vh - 104px);
     align-items: stretch;
+    scroll-margin-top: 150px;
     background:
         linear-gradient(180deg, rgba(236, 254, 255, 0.64) 0%, rgba(255, 255, 255, 0.94) 78%),
         radial-gradient(circle at 74% 28%, rgba(101, 200, 242, 0.24), transparent 20rem),
         radial-gradient(circle at 28% 22%, rgba(46, 132, 157, 0.16), transparent 18rem);
-    padding: clamp(2.5rem, 6vw, 5.5rem) 0 clamp(3rem, 6vw, 6rem);
+    padding: clamp(4.5rem, 8vw, 7.5rem) 0 clamp(3rem, 6vw, 6rem);
 }
 
 .hero-background {
@@ -1811,6 +1813,10 @@ body {
 }
 
 @media (max-width: 968px) {
+    html {
+        scroll-padding-top: 0;
+    }
+
     .site-header {
         position: static;
     }
@@ -1827,6 +1833,8 @@ body {
 
     .hero-section {
         min-height: auto;
+        scroll-margin-top: 0;
+        padding-top: clamp(2.5rem, 8vw, 4rem);
     }
 
     .hero-content,
