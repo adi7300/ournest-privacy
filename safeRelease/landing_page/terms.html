@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תנאי שימוש - מערכת שחרורים</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-right: 4px solid #3498db;
+            padding-right: 15px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .update-date {
+            color: #95a5a6;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .intro-box {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+            border-right: 4px solid #3498db;
+        }
+
+        .app-section {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-right: 3px solid #e74c3c;
+        }
+
+        .app-section.parents {
+            border-right-color: #3498db;
+        }
+
+        .app-section.staff {
+            border-right-color: #2ecc71;
+        }
+
+        ul,
+        ol {
+            margin-right: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+
+        .allowed {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .forbidden {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .important-box {
+            background: #f8d7da;
+            border: 1px solid #dc3545;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .summary-box {
+            background: #d4edda;
+            border: 2px solid #28a745;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+
+        .contact-box {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+
+        .toc h3 {
+            margin-top: 0;
+        }
+
+        .toc ol {
+            margin-right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>תנאי שימוש</h1>
+        <p class="subtitle">מערכת שחרורים</p>
+        <p class="update-date"><strong>עדכון אחרון:</strong> 8 בינואר 2026</p>
+
+        <div class="intro-box">
+            <h3>על מערכת שחרורים</h3>
+            <p>תנאי שימוש אלה חלים על שתי האפליקציות של מערכת שחרורים:</p>
+            <p><span class="emoji">📱</span> <strong>אפליקציית הורים</strong><br>
+                מאפשרת להורים להגיש בקשות לשחרור מוקדם של ילדיהם מבית הספר</p>
+            <p><span class="emoji">🏫</span> <strong>אפליקציית צוות בית ספר</strong><br>
+                מאפשרת לצוות המנהלי של בית הספר לעבד ולאשר בקשות שחרור</p>
+            <p>כל אפליקציה מיועדת לקהל יעד שונה אך שתיהן חולקות תשתית טכנית משותפת ועומדות באותם תקני אבטחה ופרטיות.</p>
+        </div>
+
+        <div class="toc">
+            <h3>תוכן עניינים</h3>
+            <ol>
+                <li><a href="#section1">קבלת התנאים</a></li>
+                <li><a href="#section2">תיאור השירות</a></li>
+                <li><a href="#section3">דרישות שימוש</a></li>
+                <li><a href="#section4">חשבון משתמש</a></li>
+                <li><a href="#section5">שימוש מותר</a></li>
+                <li><a href="#section6">שימוש אסור</a></li>
+                <li><a href="#section7">אחריות בית הספר</a></li>
+                <li><a href="#section8">זמינות השירות</a></li>
+                <li><a href="#section9">הגבלות אחריות</a></li>
+                <li><a href="#section10">שיפוי</a></li>
+                <li><a href="#section11">קניין רוחני</a></li>
+                <li><a href="#section12">סיום שימוש</a></li>
+                <li><a href="#section13">שינויים בתנאים</a></li>
+                <li><a href="#section14">חוק החל ושיפוט</a></li>
+                <li><a href="#section15">הוראות כלליות</a></li>
+                <li><a href="#section16">יצירת קשר</a></li>
+            </ol>
+        </div>
+
+        <h2 id="section1">1. קבלת התנאים</h2>
+        <p>על ידי הורדה, התקנה או שימוש באפליקציית מערכת שחרורים ("האפליקציה" או "השירות"), אתה מאשר שקראת, הבנת ומסכים
+            להיות מחויב לתנאי שימוש אלה.</p>
+        <div class="important-box">
+            <p>אם אינך מסכים לתנאים אלה - אל תשתמש באפליקציה.</p>
+        </div>
+
+        <h2 id="section2">2. תיאור השירות</h2>
+
+        <div class="app-section parents">
+            <h3><span class="emoji">📱</span> אפליקציית הורים</h3>
+
+            <h4>מה האפליקציה עושה:</h4>
+            <ul>
+                <li>הגשת בקשות לשחרור מוקדם של ילדים מבית הספר</li>
+                <li>עקיבה אחר סטטוס בקשות השחרור</li>
+                <li>קבלת התראות על אישורים/דחיות</li>
+                <li>צפייה בהיסטוריית בקשות קודמות</li>
+                <li>ניהול מספר ילדים ממספר בתי ספר</li>
+            </ul>
+
+            <h4>מה האפליקציה לא עושה:</h4>
+            <ul>
+                <li class="forbidden">❌ לא מחליפה תיאום ישיר עם בית הספר במקרי חירום</li>
+                <li class="forbidden">❌ לא מבטיחה אישור אוטומטי של בקשות</li>
+                <li class="forbidden">❌ לא אחראית על ההחלטות של בית הספר</li>
+            </ul>
+        </div>
+
+        <div class="app-section staff">
+            <h3><span class="emoji">🏫</span> אפליקציית צוות בית ספר</h3>
+
+            <h4>מה האפליקציה עושה:</h4>
+            <ul>
+                <li>צפייה בבקשות שחרור של בית הספר</li>
+                <li>אישור או דחיית בקשות שחרור</li>
+                <li>הוספה וניהול תלמידים במערכת</li>
+                <li>שליחת התראות אוטומטיות להורים</li>
+                <li>צפייה בהיסטוריית שחרורים ודוחות</li>
+                <li>פילטור בקשות לפי תפקיד (מורה/מזכירה/שומר/מנהל)</li>
+            </ul>
+
+            <h4>מה האפליקציה לא עושה:</h4>
+            <ul>
+                <li class="forbidden">❌ לא מחליפה את שיקול הדעת המקצועי של בית הספר</li>
+                <li class="forbidden">❌ לא מאשרת בקשות אוטומטית</li>
+                <li class="forbidden">❌ לא מספקת ייעוץ חינוכי או משפטי</li>
+            </ul>
+        </div>
+
+        <h2 id="section3">3. דרישות שימוש</h2>
+
+        <h3><span class="emoji">📱</span> אפליקציית הורים - מי יכול להשתמש</h3>
+        <ul>
+            <li class="allowed">✅ הורים או אפוטרופוסים חוקיים של תלמידים בבתי ספר משתתפים</li>
+            <li class="allowed">✅ בעלי סמכות משפטית לבקש שחרור של הקטין</li>
+            <li class="allowed">✅ בני 18 ומעלה</li>
+        </ul>
+
+        <h3><span class="emoji">🏫</span> אפליקציית צוות - מי יכול להשתמש</h3>
+        <ul>
+            <li class="allowed">✅ עובדי בתי ספר משתתפים בלבד</li>
+            <li class="allowed">✅ בעלי אישור ממנהל בית הספר להשתמש במערכת</li>
+            <li class="allowed">✅ בני 18 ומעלה</li>
+            <li class="allowed">✅ בעלי תפקיד מוגדר (מורה/מזכירה/שומר/מנהל)</li>
+        </ul>
+
+        <h3>מי לא יכול להשתמש (שתי האפליקציות)</h3>
+        <ul>
+            <li class="forbidden">❌ קטינים מתחת לגיל 18</li>
+            <li class="forbidden">❌ גורמים שאינם בעלי סמכות מתאימה</li>
+            <li class="forbidden">❌ משתמשים שחשבונם הושעה או נחסם</li>
+            <li class="forbidden">❌ גורמים חיצוניים שאינם קשורים לבית הספר</li>
+        </ul>
+
+        <h2 id="section4">4. חשבון משתמש</h2>
+
+        <div class="app-section parents">
+            <h3><span class="emoji">📱</span> חשבון הורים</h3>
+
+            <h4>יצירת חשבון:</h4>
+            <ul>
+                <li>אתה אחראי לספק מידע מדויק ועדכני</li>
+                <li>מספר הטלפון שלך משמש לאימות זהות</li>
+                <li>חשבון אחד לכל מספר טלפון</li>
+            </ul>
+
+            <h4>אבטחת חשבון:</h4>
+            <p>אתה אחראי:</p>
+            <ul>
+                <li>לשמור את קודי ה-OTP בסודיות</li>
+                <li>לא לשתף גישה לחשבון עם אחרים</li>
+                <li>לעדכן אותנו מיידית במקרה של שימוש לא מורשה</li>
+            </ul>
+        </div>
+
+        <div class="app-section staff">
+            <h3><span class="emoji">🏫</span> חשבון צוות</h3>
+
+            <h4>יצירת חשבון:</h4>
+            <ul>
+                <li>חשבונות נוצרים רק על ידי מנהל בית הספר</li>
+                <li>שם משתמש וסיסמה מסופקים על ידי בית הספר</li>
+                <li>תפקיד מוגדר מראש (מורה/מזכירה/שומר/מנהל)</li>
+            </ul>
+
+            <h4>אבטחת חשבון:</h4>
+            <p>חבר צוות אחראי:</p>
+            <ul>
+                <li>לשמור על שם המשתמש והסיסמה בסודיות מוחלטת</li>
+                <li><strong>לא לשתף</strong> את פרטי ההתחברות עם אף אחד</li>
+                <li>להודיע למנהל בית הספר מיידית על חשד לשימוש לא מורשה</li>
+                <li>לצאת מהמערכת בסיום משמרת/יום עבודה</li>
+            </ul>
+
+            <h4>אחריות מקצועית:</h4>
+            <ul>
+                <li>חבר צוות פועל כנציג של בית הספר</li>
+                <li>כל פעולה במערכת נרשמת ומיוחסת לחבר הצוות</li>
+                <li>חובת דיווח למנהל על כל בעיה או חשד לשימוש לא תקין</li>
+            </ul>
+        </div>
+
+        <div class="important-box">
+            <p>אנחנו לא אחראים לשימוש לא מורשה שנגרם מהזנחת משתמש.</p>
+        </div>
+
+        <h2 id="section5">5. שימוש מותר</h2>
+
+        <h3><span class="emoji">📱</span> הורים - מה מותר</h3>
+        <ul>
+            <li class="allowed">✅ הגשת בקשות שחרור לגיטימיות לילדיך</li>
+            <li class="allowed">✅ עדכון פרטים אישיים שלך</li>
+            <li class="allowed">✅ צפייה בהיסטוריית בקשות שלך</li>
+            <li class="allowed">✅ קבלת התראות על סטטוס בקשות</li>
+            <li class="allowed">✅ ניהול מספר ילדים (אם רלוונטי)</li>
+        </ul>
+
+        <h3><span class="emoji">🏫</span> צוות - מה מותר</h3>
+        <ul>
+            <li class="allowed">✅ צפייה בבקשות של בית הספר שלך בלבד</li>
+            <li class="allowed">✅ אישור/דחייה של בקשות לפי סמכות התפקיד שלך</li>
+            <li class="allowed">✅ הוספת וניהול תלמידים של בית הספר שלך</li>
+            <li class="allowed">✅ צפייה בדוחות והיסטוריה של בית הספר שלך</li>
+            <li class="allowed">✅ שימוש במערכת לצורכי העבודה המקצועית שלך בלבד</li>
+        </ul>
+
+        <h2 id="section6">6. שימוש אסור</h2>
+
+        <h3><span class="forbidden">❌</span> אסור בהחלט (שתי האפליקציות)</h3>
+
+        <h4>הגשת מידע שווא:</h4>
+        <ul>
+            <li class="forbidden">הגשת בקשות עבור ילדים שאינם שלך (הורים)</li>
+            <li class="forbidden">מתן מידע כוזב או מטעה</li>
+            <li class="forbidden">ניצול לרעה של המערכת</li>
+            <li class="forbidden">זיוף זהות או סמכות</li>
+        </ul>
+
+        <h4>התקפות או שיבוש:</h4>
+        <ul>
+            <li class="forbidden">ניסיונות פריצה או עקיפת אבטחה</li>
+            <li class="forbidden">שימוש בבוטים או אוטומציה</li>
+            <li class="forbidden">העמסת המערכת בבקשות מופרזות</li>
+            <li class="forbidden">הפצת וירוסים או תוכנות זדוניות</li>
+            <li class="forbidden">ניסיון לגשת למידע של בתי ספר אחרים</li>
+        </ul>
+
+        <h4>שימוש מסחרי לא מורשה:</h4>
+        <ul>
+            <li class="forbidden">מכירת גישה לחשבון שלך</li>
+            <li class="forbidden">שימוש למטרות מסחריות ללא אישור</li>
+            <li class="forbidden">גירוד (scraping) של מידע מהמערכת</li>
+            <li class="forbidden">העתקת מידע למערכות חיצוניות ללא אישור</li>
+        </ul>
+
+        <h4>הטרדה או פגיעה:</h4>
+        <ul>
+            <li class="forbidden">הטרדת צוות בית הספר או משתמשים אחרים</li>
+            <li class="forbidden">שימוש פוגעני או מעליב במערכת</li>
+            <li class="forbidden">פרסום מידע פרטי של אחרים</li>
+        </ul>
+
+        <h3><span class="forbidden">❌</span> אסור ספציפית לצוות בית ספר</h3>
+
+        <h4>שימוש לרעה בסמכות:</h4>
+        <ul>
+            <li class="forbidden">גישה למידע שאינו רלוונטי לתפקידך</li>
+            <li class="forbidden">אישור/דחיית בקשות שלא בהתאם למדיניות בית הספר</li>
+            <li class="forbidden">שימוש במערכת למטרות אישיות</li>
+            <li class="forbidden">העברת מידע על תלמידים לגורמים לא מורשים</li>
+        </ul>
+
+        <h4>הפרת פרטיות:</h4>
+        <ul>
+            <li class="forbidden">צילום מסכים או הדפסת מידע רגיש ללא הרשאה</li>
+            <li class="forbidden">שיתוף פרטי הורים/תלמידים מחוץ למערכת</li>
+            <li class="forbidden">דיבור על תלמידים או הורים מחוץ להקשר מקצועי</li>
+            <li class="forbidden">שימוש במידע התלמידים למטרות שאינן קשורות לתפקיד</li>
+        </ul>
+
+        <div class="warning-box">
+            <h4>הפרת תנאים אלה על ידי חבר צוות:</h4>
+            <ul>
+                <li>עלולה להוביל לפיטורים</li>
+                <li>חסימת חשבון מיידית</li>
+                <li>פנייה לרשויות במקרים חמורים</li>
+                <li>אחריות משפטית אישית</li>
+            </ul>
+        </div>
+
+        <h2 id="section7">7. אחריות בית הספר</h2>
+
+        <h3>החלטות שחרור</h3>
+        <ul>
+            <li>בית הספר הוא הגורם היחיד שמאשר/דוחה בקשות</li>
+            <li>אין לנו שליטה על החלטות בית הספר</li>
+            <li>איננו מתערבים בשיקול הדעת של בית הספר</li>
+            <li>צוות בית הספר אחראי על החלטותיו המקצועיות</li>
+        </ul>
+
+        <h3>מדיניות בית הספר</h3>
+        <ul>
+            <li>כל בית ספר קובע את מדיניות השחרורים שלו</li>
+            <li>המערכת מספקת כלי, לא מכתיבה מדיניות</li>
+            <li>אחריות על יישום נכון של המדיניות - על בית הספר</li>
+        </ul>
+
+        <h3>תיאום ישיר</h3>
+        <p>במקרים הבאים, <strong>חובה לתאם ישירות עם בית הספר:</strong></p>
+        <ul>
+            <li>מקרי חירום רפואיים</li>
+            <li>שינויים דחופים בזמן השחרור</li>
+            <li>בעיות טכניות במערכת</li>
+            <li>מצבים חריגים שאינם מכוסים במערכת</li>
+        </ul>
+
+        <div class="important-box">
+            <p>האפליקציה אינה מחליפה תקשורת ישירה במצבים דחופים.</p>
+        </div>
+
+        <h2 id="section8">8. זמינות השירות</h2>
+
+        <h3>זמינות</h3>
+        <p>אנו שואפים לזמינות של <strong>99%</strong>, אך:</p>
+        <ul>
+            <li>ייתכנו תקלות, תחזוקה או שדרוגים</li>
+            <li>השירות מסופק "כמות שהוא" (AS IS)</li>
+            <li>אין התחייבות לזמינות רציפה 24/7</li>
+        </ul>
+
+        <h3>תחזוקה</h3>
+        <p>אנו רשאים:</p>
+        <ul>
+            <li>להשבית זמנית את האפליקציה לתחזוקה</li>
+            <li>לבצע עדכונים ושיפורים</li>
+            <li>לשנות תכונות או להסיר אותן</li>
+            <li>לשדרג את התשתית הטכנית</li>
+        </ul>
+        <p><em>ננסה להודיע מראש, אך לא תמיד יהיה אפשרי.</em></p>
+
+        <h3>תמיכה טכנית</h3>
+        <p><strong>הורים:</strong></p>
+        <ul>
+            <li>תמיכה דרך: support@shichrurim.com</li>
+            <li>זמן תגובה: 48 שעות (ימי עסקים)</li>
+        </ul>
+
+        <p><strong>צוות:</strong></p>
+        <ul>
+            <li>תמיכה טכנית: support@shichrurim.com</li>
+            <li>לבעיות תפעוליות: מנהל בית הספר שלך</li>
+            <li>זמן תגובה: 48 שעות (ימי עסקים)</li>
+        </ul>
+
+        <h2 id="section9">9. הגבלות אחריות</h2>
+
+        <h3>אנחנו לא אחראים ל:</h3>
+
+        <h4><span class="forbidden">❌</span> החלטות בית הספר</h4>
+        <ul>
+            <li>אישור או דחיה של בקשות</li>
+            <li>זמני תגובה של בית הספר</li>
+            <li>מדיניות השחרורים של בית הספר</li>
+            <li>החלטות מקצועיות של צוות בית הספר</li>
+        </ul>
+
+        <h4><span class="forbidden">❌</span> נזקים עקיפים</h4>
+        <ul>
+            <li>אובדן זמן או הזדמנויות</li>
+            <li>נזקים כספיים עקיפים</li>
+            <li>אי-נוחות או מתח</li>
+            <li>השלכות של החלטות שגויות של משתמשים</li>
+        </ul>
+
+        <h4><span class="forbidden">❌</span> כשלים טכניים</h4>
+        <ul>
+            <li>תקלות במכשיר שלך</li>
+            <li>בעיות רשת או אינטרנט</li>
+            <li>תאימות למכשירים מסוימים</li>
+            <li>אובדן מידע עקב כשל חומרה</li>
+        </ul>
+
+        <h4><span class="forbidden">❌</span> צדדים שלישיים</h4>
+        <ul>
+            <li>שירותי SMS (inforUMobile)</li>
+            <li>תשתית Supabase</li>
+            <li>שירותי אחסון ענן</li>
+            <li>ספקי אינטרנט</li>
+        </ul>
+
+        <h4><span class="forbidden">❌</span> שימוש לא נכון במערכת</h4>
+        <ul>
+            <li>החלטות מקצועיות שגויות של צוות</li>
+            <li>הפרות פרטיות על ידי משתמשים</li>
+            <li>נזקים שנגרמו משימוש בניגוד לתנאים</li>
+        </ul>
+
+        <h3>מגבלת אחריות כספית</h3>
+        <p>במקרה של תביעה, האחריות המקסימלית שלנו מוגבלת ל-<strong>100 ש"ח</strong>, או הסכום ששילמת (אם בכלל),
+            <strong>הנמוך מבניהם</strong>.
+        </p>
+
+        <h2 id="section10">10. שיפוי</h2>
+
+        <p>אתה מתחייב לשפות אותנו (לכסות הוצאות משפטיות ונזקים) במקרה של:</p>
+        <ul>
+            <li>הפרת תנאי שימוש אלה על ידך</li>
+            <li>שימוש לא חוקי באפליקציה</li>
+            <li>פגיעה בזכויות צד שלישי</li>
+            <li>מידע כוזב או מטעה שסיפקת</li>
+            <li>הפרת פרטיות של אחרים באמצעות המערכת</li>
+        </ul>
+
+        <h4>לצוות בית ספר - נוסף:</h4>
+        <ul>
+            <li>נזקים שנגרמו משימוש לא נכון בסמכויות</li>
+            <li>הפרות של מדיניות בית הספר</li>
+            <li>פגיעה בפרטיות תלמידים או הורים</li>
+        </ul>
+
+        <h2 id="section11">11. קניין רוחני</h2>
+
+        <h3>זכויות יוצרים</h3>
+        <ul>
+            <li>כל התוכן באפליקציות (קוד, עיצוב, טקסט, לוגו) הוא בבעלותנו</li>
+            <li>אתה מקבל רישיון שימוש אישי/מקצועי בלבד</li>
+            <li>אסור להעתיק, לשכפל, או להפיץ את האפליקציה</li>
+        </ul>
+
+        <h3>הרישיון שלך</h3>
+        <p>זהו רישיון:</p>
+        <ul>
+            <li><strong>לא-בלעדי</strong> (אחרים יכולים להשתמש גם)</li>
+            <li><strong>לא-ניתן להעברה</strong> (לא ניתן למכור/להעביר לאחרים)</li>
+            <li><strong>ניתן לביטול</strong> (אם תפר את התנאים)</li>
+            <li><strong>לשימוש אישי/מקצועי בלבד</strong> (לפי סוג האפליקציה)</li>
+        </ul>
+
+        <h3>קניין רוחני של בית הספר</h3>
+        <ul>
+            <li>נתוני בית הספר שייכים לבית הספר</li>
+            <li>אנחנו רק מארחים ומעבדים את הנתונים</li>
+            <li>בית הספר יכול לבקש ייצוא מלא של הנתונים שלו</li>
+            <li>עם סיום ההתקשרות - הנתונים מועברים או נמחקים</li>
+        </ul>
+
+        <h2 id="section12">12. סיום שימוש</h2>
+
+        <h3><span class="emoji">📱</span> הורה יכול להפסיק</h3>
+        <ul>
+            <li>מחק את החשבון דרך: הגדרות → מחיקת חשבון</li>
+            <li>או שלח בקשה ל-support@shichrurim.com</li>
+            <li>המידע שלך יימחק תוך 30 יום</li>
+        </ul>
+
+        <h3><span class="emoji">🏫</span> צוות יכול להפסיק</h3>
+        <ul>
+            <li>פנייה למנהל בית הספר</li>
+            <li>או שלח בקשה ל-support@shichrurim.com</li>
+            <li><strong>שים לב:</strong> היסטוריית פעולות נשארת לצורכי ביקורת</li>
+        </ul>
+
+        <h3><span class="emoji">🏫</span> בית ספר יכול להפסיק</h3>
+        <ul>
+            <li>הודעה בכתב ל-support@shichrurim.com</li>
+            <li>תקופת הודעה: 30 יום</li>
+            <li>כל הנתונים יימחקו או ייוצאו לפי בקשה</li>
+        </ul>
+
+        <h3>אנחנו יכולים להפסיק</h3>
+        <p>אנו רשאים <strong>לחסום או למחוק חשבון</strong> ללא התראה אם:</p>
+        <ul>
+            <li>הפרת תנאי שימוש אלה</li>
+            <li>השתמשת באופן בלתי חוקי או פוגעני</li>
+            <li>סיכנת את אבטחת המערכת</li>
+            <li>הפצת מידע כוזב</li>
+            <li><strong>צוות:</strong> הפרת פרטיות או שימוש לרעה בסמכויות</li>
+        </ul>
+
+        <h3>תוצאות סיום</h3>
+
+        <h4>הורים:</h4>
+        <ul>
+            <li>אובדן גישה לכל המידע בחשבון</li>
+            <li>מחיקת כל בקשות השחרור ההיסטוריות</li>
+            <li>אובדן זכויות שימוש באפליקציה</li>
+        </ul>
+
+        <h4>צוות:</h4>
+        <ul>
+            <li>אובדן גישה למערכת</li>
+            <li>היסטוריית פעולות נשמרת לביקורת</li>
+            <li>הודעה למנהל בית הספר</li>
+        </ul>
+
+        <h4>בית ספר:</h4>
+        <ul>
+            <li>אובדן גישה לכל הצוות</li>
+            <li>ייצוא או מחיקת נתונים (לפי בחירה)</li>
+            <li>סגירת כל החשבונות הקשורים</li>
+        </ul>
+
+        <h2 id="section13">13. שינויים בתנאים</h2>
+
+        <h3>זכותנו לשנות</h3>
+        <p>אנו רשאים לעדכן תנאים אלה <strong>בכל עת</strong> כדי:</p>
+        <ul>
+            <li>לשקף שינויים בשירות</li>
+            <li>לעמוד בדרישות חוק</li>
+            <li>לשפר את האבטחה או הפרטיות</li>
+            <li>להוסיף תכונות חדשות</li>
+        </ul>
+
+        <h3>הודעה על שינויים</h3>
+        <p>במקרה של שינויים מהותיים:</p>
+        <ul>
+            <li>✉️ התראה באפליקציה (שתי האפליקציות)</li>
+            <li>📱 הודעת SMS (אפליקציית הורים)</li>
+            <li>📧 מייל למנהלי בתי ספר (אפליקציית צוות)</li>
+            <li>פרסום בדף תנאי השימוש</li>
+        </ul>
+
+        <h3>המשך שימוש = הסכמה</h3>
+        <p>המשך שימוש באפליקציה לאחר השינויים = הסכמה לתנאים החדשים.</p>
+        <p>אם אינך מסכים - הפסק להשתמש ומחק את החשבון.</p>
+
+        <h2 id="section14">14. חוק החל ושיפוט</h2>
+
+        <h3>חוק ישראלי</h3>
+        <p>תנאים אלה כפופים ל<strong>חוקי מדינת ישראל</strong> בלבד.</p>
+
+        <h3>סמכות שיפוט</h3>
+        <p>כל סכסוך יידון ב<strong>בתי המשפט המוסמכים בתל אביב, ישראל</strong>.</p>
+
+        <h3>פתרון סכסוכים</h3>
+        <p>לפני הגשת תביעה, אנו ממליצים:</p>
+        <ol>
+            <li>ליצור קשר ב-support@shichrurim.com</li>
+            <li><strong>צוות:</strong> תיאום עם מנהל בית הספר</li>
+            <li>לתת לנו <strong>30 יום</strong> לנסות לפתור את הבעיה</li>
+            <li>רק לאחר מכן - פנייה לערכאות משפטיות</li>
+        </ol>
+
+        <h2 id="section15">15. הוראות כלליות</h2>
+
+        <h3>תקפות</h3>
+        <p>אם סעיף מסוים נמצא בלתי חוקי או בלתי תקף, <strong>שאר התנאים נשארים בתוקף</strong>.</p>
+
+        <h3>ויתור</h3>
+        <p>אי-אכיפה של תנאי מסוים <strong>אינה מהווה ויתור</strong> על הזכות לאכוף אותו בעתיד.</p>
+
+        <h3>הסכם מלא</h3>
+        <p>תנאים אלה + מדיניות הפרטיות = <strong>ההסכם המלא</strong> בינינו.</p>
+        <p>אין הסכמים נוספים בעל פה או בכתב.</p>
+
+        <h3>שפה</h3>
+        <p>המסמך נכתב בעברית. במקרה של סתירה בין גרסאות - <strong>העברית גוברת</strong>.</p>
+
+        <h3>העברת זכויות</h3>
+        <ul>
+            <li><strong>אתה לא יכול</strong> להעביר את הזכויות או החובות שלך לאחר</li>
+            <li><strong>אנחנו יכולים</strong> להעביר זכויות/חובות במקרה של מכירה/מיזוג</li>
+        </ul>
+
+        <h2 id="section16">16. יצירת קשר</h2>
+
+        <div class="contact-box">
+            <h3>שאלות על תנאי השימוש?</h3>
+
+            <h4>📧 אימייל</h4>
+            <p><a href="mailto:support@shichrurim.com">support@shichrurim.com</a></p>
+
+            <h4>📍 כתובת</h4>
+            <p>מערכת שחרורים<br>
+                בני אפרים 210ב<br>
+                תל אביב, ישראל</p>
+
+            <h4>⏱️ זמן תגובה</h4>
+            <p>48 שעות (ימי עסקים)</p>
+
+            <h4>🏫 לצוות בית ספר</h4>
+            <p>לשאלות תפעוליות או הרשאות:</p>
+            <ol>
+                <li>פנה למנהל בית הספר שלך תחילה</li>
+                <li>לבעיות טכניות: support@shichrurim.com</li>
+            </ol>
+        </div>
+
+        <div class="summary-box">
+            <h2>סיכום מהיר</h2>
+
+            <h3><span class="emoji">📱</span> הורים:</h3>
+            <ul>
+                <li class="allowed">✅ השתמש באפליקציה באופן אחראי ולגיטימי</li>
+                <li class="allowed">✅ הגש רק בקשות אמיתיות לילדיך</li>
+                <li class="allowed">✅ שמור על אבטחת החשבון שלך</li>
+                <li class="allowed">✅ תאם ישירות עם בית הספר במקרי חירום</li>
+                <li class="forbidden">❌ אל תשתף גישה לחשבון</li>
+                <li class="forbidden">❌ אל תשתמש בצורה הפוגעת או בלתי חוקית</li>
+            </ul>
+
+            <h3><span class="emoji">🏫</span> צוות:</h3>
+            <ul>
+                <li class="allowed">✅ השתמש במערכת לצורכי עבודה בלבד</li>
+                <li class="allowed">✅ שמור על סודיות המידע</li>
+                <li class="allowed">✅ פעל לפי מדיניות בית הספר</li>
+                <li class="allowed">✅ דווח על בעיות למנהל בית הספר</li>
+                <li class="forbidden">❌ אל תשתף פרטי התחברות</li>
+                <li class="forbidden">❌ אל תגש למידע שאינו רלוונטי לתפקידך</li>
+                <li class="forbidden">❌ אל תשתף מידע על תלמידים מחוץ למערכת</li>
+            </ul>
+        </div>
+
+        <div class="important-box">
+            <p style="text-align: center; font-size: 1.1em;">
+                על ידי שימוש באפליקציה, אתה מצהיר שקראת והבנת תנאים אלה ומסכים להם במלואם.
+            </p>
+        </div>
+
+        <div class="footer">
+            <h3>מערכת שחרורים</h3>
+            <p>© 2026 מערכת שחרורים. כל הזכויות שמורות.</p>
+            <p class="update-date">עדכון אחרון: 8 בינואר 2026</p>
+        </div>
+    </div>
+</body>
+
+</html>
